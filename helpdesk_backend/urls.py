@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('incidencias.urls')),  # Sin prefijo adicional
+    path('', include('incidencias.urls')),  # Aquí importa la app directamente
 ]
