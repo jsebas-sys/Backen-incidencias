@@ -2,12 +2,11 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import IncidenciaViewSet
 
-# Inicializamos el router
+# Creamos el router y registramos el viewset
 router = DefaultRouter()
-# Registramos la vista IncidenciaViewSet con el prefijo 'incidencias'
 router.register(r'incidencias', IncidenciaViewSet)
 
-# Definimos las rutas que se manejarán en la aplicación
+# Incluimos las rutas en la app
 urlpatterns = [
-    path('api/', include(router.urls)),  # Prefijo 'api/' para todas las rutas de la API
+    path('api/', include(router.urls)),  # Final: /incidencias/api/incidencias/
 ]
