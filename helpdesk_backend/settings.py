@@ -78,10 +78,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS
 CORS_ALLOWED_ORIGINS = [
     'https://backen-incidencias-production.up.railway.app',
+    'https://ingesoft-production.up.railway.app',
 ]
 CORS_ALLOW_CREDENTIALS = True
 
 # CSRF
 CSRF_TRUSTED_ORIGINS = [
     'https://backen-incidencias-production.up.railway.app',
+    'https://ingesoft-production.up.railway.app',
 ]
