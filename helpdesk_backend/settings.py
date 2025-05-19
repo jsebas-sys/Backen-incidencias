@@ -83,5 +83,5 @@ CORS_ALLOW_CREDENTIALS = True
 
 # CSRF
 CSRF_TRUSTED_ORIGINS = [
-    'backen-incidencias-production.up.railway.app',
+    'https://backen-incidencias-production.up.railway.app',
 ]
