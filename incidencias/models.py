@@ -16,6 +16,7 @@ class Incidencia(models.Model):
     codigo = models.CharField(max_length=10)
     equipo = models.CharField(max_length=100)
     fecha = models.DateField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)  # <-- Para saber la última modificación
     estado = models.CharField(max_length=20, choices=ESTADO_CHOICES, default='pendiente')
     prioridad = models.CharField(max_length=10, choices=PRIORIDAD_CHOICES, default='media')
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
